@@ -28,6 +28,7 @@ gem "bootsnap", require: false
 
 gem "activeadmin", "~> 4.0.0.beta13"
 gem "devise"
+gem "vite_rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
