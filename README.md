@@ -8,7 +8,7 @@ This repo shows a sample application with:
 
 - Vite Rails
 - ActiveAdmin 4
-- Two separate Tailwind configs for admin and app itself
+- Two separate Tailwind configs and entrypoints for admin and app itself, so you get two separate bundles with app-only and admin-only stuff
 
 ## How-to
 
@@ -23,3 +23,4 @@ This repo shows a sample application with:
   - Create a styles file, fill it with basic tailwind stuff and specify correct config file
   - Import your styles and `@activeadmin/activeadmin` in your entrypoint
   - Edit `app/views/active_admin/_html_head.html.erb` to use vite instead of importmap and sprockets
+  - Exclude activeadmin stuff from your primary tailwind config (if there is one)
