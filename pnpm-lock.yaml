@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@activeadmin/activeadmin':
+        specifier: 4.0.0beta13
+        version: 4.0.0-beta13
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -25,6 +28,9 @@ importers:
         version: 5.1.1(vite@5.4.10)
 
 packages:
+
+  '@activeadmin/activeadmin@4.0.0-beta13':
+    resolution: {integrity: sha512-mujRKPjgO4Rx8Zw0Yq9OiMl9udM9CFeqNljNNbHKijvM1kRIFRngVGnWhnQ1cZANhVM8BAGIp2vEm0ROenemrw==}
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -205,6 +211,12 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
+  '@rails/ujs@7.1.400':
+    resolution: {integrity: sha512-YwvXm3BR5tn+VCAKYGycLejMRVZE3Ionj5gFjEeGXCZnI0Rpi+7dKpmyu90kdUY7dRUFpHTdu9zZceEzFLl38w==}
 
   '@rollup/rollup-android-arm-eabi@4.24.4':
     resolution: {integrity: sha512-jfUJrFct/hTA0XDM5p/htWKoNNTbDLY0KRwEt6pyOA6k2fmk0WVwl65PdUdJZgzGEHWx+49LilkcSaumQRyNQw==}
@@ -429,6 +441,9 @@ packages:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
+  flowbite@2.3.0:
+    resolution: {integrity: sha512-pm3JRo8OIJHGfFYWgaGpPv8E+UdWy0Z3gEAGufw+G/1dusaU/P1zoBLiQpf2/+bYAi+GBQtPVG86KYlV0W+AFQ==}
+
   foreground-child@3.3.0:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
     engines: {node: '>=14'}
@@ -515,6 +530,10 @@ packages:
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
+
+  mini-svg-data-uri@1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
 
   minimatch@9.0.5:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
@@ -775,6 +794,11 @@ packages:
 
 snapshots:
 
+  '@activeadmin/activeadmin@4.0.0-beta13':
+    dependencies:
+      '@rails/ujs': 7.1.400
+      flowbite: 2.3.0
+
   '@alloc/quick-lru@5.2.0': {}
 
   '@esbuild/aix-ppc64@0.21.5':
@@ -886,6 +910,10 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@popperjs/core@2.11.8': {}
+
+  '@rails/ujs@7.1.400': {}
 
   '@rollup/rollup-android-arm-eabi@4.24.4':
     optional: true
@@ -1083,6 +1111,11 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
+  flowbite@2.3.0:
+    dependencies:
+      '@popperjs/core': 2.11.8
+      mini-svg-data-uri: 1.4.4
+
   foreground-child@3.3.0:
     dependencies:
       cross-spawn: 7.0.3
@@ -1158,6 +1191,8 @@ snapshots:
     dependencies:
       braces: 3.0.3
       picomatch: 2.3.1
+
+  mini-svg-data-uri@1.4.4: {}
 
   minimatch@9.0.5:
     dependencies:

@@ -1,4 +1,3 @@
-<%= stylesheet_link_tag "active_admin" %>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <%= csrf_meta_tags %>
 <%= csp_meta_tag %>
@@ -10,4 +9,5 @@
     document.documentElement.classList.remove('dark')
   }
 <% end %>
-<%= javascript_importmap_tags "active_admin", importmap: ActiveAdmin.importmap %>
+<%= vite_client_tag %>
+<%= vite_javascript_tag 'admin' %>

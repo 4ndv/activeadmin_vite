@@ -1,0 +1,6 @@
+@config "../../../tailwind-active_admin.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
